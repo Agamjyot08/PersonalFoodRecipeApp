@@ -1,6 +1,7 @@
 package com.android.personalfoodrecipeapp;
 
 import android.content.Context;
+import android.content.Intent;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -8,10 +9,10 @@ import android.widget.ImageView;
 import android.widget.TextView;
 
 import androidx.annotation.NonNull;
+import androidx.cardview.widget.CardView;
 import androidx.recyclerview.widget.RecyclerView;
 
 import java.util.List;
-import java.util.ArrayList;
 
 public class Adapter extends RecyclerView.Adapter<ItemViewHolder> {
 
@@ -31,11 +32,26 @@ public class Adapter extends RecyclerView.Adapter<ItemViewHolder> {
     }
 
     @Override
-    public void onBindViewHolder(@NonNull ItemViewHolder ItemViewHolder, int i) {
+    public void onBindViewHolder(@NonNull ItemViewHolder itemViewHolder, int i) {
 
-        ItemViewHolder.imageView.setImageResource(myItemList.get(i).getItemImage());
-        ItemViewHolder.title.setText(myItemList.get(i).getItemName());
-    }
+        itemViewHolder.itemImage.setImageResource(myItemList.get(i).getItemImage());
+        itemViewHolder.title.setText(myItemList.get(i).getItemName());
+
+
+        itemViewHolder.cardView.setOnClickListener(new View.OnClickListener() {
+
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(mContext, ItemDetailsActivity.class);
+                intent.putExtra("Image", myItemList.get(itemViewHolder.getAdapterPosition()).getItemImage());
+                intent.putExtra("Name", myItemList.get(itemViewHolder.getAdapterPosition()).getItemName());
+                intent.putExtra("Ingredients", myItemList.get(itemViewHolder.getAdapterPosition()).getItemIngredients());
+                intent.putExtra("Steps", myItemList.get(itemViewHolder.getAdapterPosition()).getItemSteps());
+
+                mContext.startActivity(intent);
+            }
+
+        });    }
 
     @Override
     public int getItemCount() {
@@ -45,14 +61,20 @@ public class Adapter extends RecyclerView.Adapter<ItemViewHolder> {
 
 class ItemViewHolder extends RecyclerView.ViewHolder {
 
-    ImageView imageView;
+    ImageView itemImage;
     TextView title;
+    TextView ingredients;
+    TextView steps;
+    CardView cardView;
 
     public ItemViewHolder(View itemView) {
         super(itemView);
 
-        imageView = itemView.findViewById(R.id.imageView);
+        itemImage = itemView.findViewById(R.id.itemImage);
         title = itemView.findViewById(R.id.title);
+        cardView = itemView.findViewById(R.id.cardView);
+        ingredients = itemView.findViewById(R.id.txt_ing_info);
+        steps = itemView.findViewById(R.id.txt_steps_info);
 
     }
 }

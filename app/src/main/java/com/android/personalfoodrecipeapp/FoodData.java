@@ -13,8 +13,8 @@ public class FoodData {
     public FoodData(String itemName, String itemIngredients, String itemSteps, int itemImage) {
         this.itemName = itemName;
         this.itemIngredients = itemIngredients;
-        ItemSteps = itemSteps;
-        ItemImage = itemImage;
+        this.ItemSteps = itemSteps;
+        this.ItemImage = itemImage;
     }
 
     public String getItemName() {

@@ -7,6 +7,9 @@ public class FoodData {
     private String ItemSteps;
     private int ItemImage;
 
+    public FoodData() {
+    }
+
     public FoodData(String itemName, String itemIngredients, String itemSteps, int itemImage) {
         this.itemName = itemName;
         this.itemIngredients = itemIngredients;

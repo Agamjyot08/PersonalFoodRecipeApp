@@ -11,6 +11,7 @@ import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 
 import java.util.List;
+import java.util.ArrayList;
 
 public class Adapter extends RecyclerView.Adapter<ItemViewHolder> {
 
@@ -23,18 +24,17 @@ public class Adapter extends RecyclerView.Adapter<ItemViewHolder> {
     }
 
     @Override
-    public ItemViewHolder onCreateViewHolder(@NonNull ViewGroup viewGroup, int viewType) {
-
-        View mView = LayoutInflater.from(viewGroup.getContext()).inflate(R.layout.recycler_item_view, viewGroup, false);
+    public ItemViewHolder onCreateViewHolder(@NonNull ViewGroup viewGroup, int i) {
+        View mView = LayoutInflater.from(viewGroup.getContext()).inflate(R.layout.recycler_item_view,viewGroup,false);
 
         return new ItemViewHolder(mView);
     }
 
     @Override
-    public void onBindViewHolder(@NonNull ItemViewHolder itemViewHolder, int i) {
+    public void onBindViewHolder(@NonNull ItemViewHolder ItemViewHolder, int i) {
 
-        itemViewHolder.imageView.setImageResource(myItemList.get(i).getItemImage());
-        itemViewHolder.title.setText(myItemList.get(i).getItemName());
+        ItemViewHolder.imageView.setImageResource(myItemList.get(i).getItemImage());
+        ItemViewHolder.title.setText(myItemList.get(i).getItemName());
     }
 
     @Override
@@ -52,7 +52,7 @@ class ItemViewHolder extends RecyclerView.ViewHolder {
         super(itemView);
 
         imageView = itemView.findViewById(R.id.imageView);
-        title = title.findViewById(R.id.title);
+        title = itemView.findViewById(R.id.title);
 
     }
 }

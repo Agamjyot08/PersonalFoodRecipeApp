@@ -27,13 +27,7 @@ public class MainActivity extends AppCompatActivity {
 
         myItemList = new ArrayList<>();
 
-        foodData = new FoodData("Sample dish name", "sample", "sample", R.drawable.ic_launcher_background);
 
-        myItemList.add(foodData);
-
-        foodData = new FoodData("Sample dish name", "sample", "sample", R.drawable.ic_launcher_background);
-
-        myItemList.add(foodData);
 
         Adapter myAdapter = new Adapter(MainActivity.this, myItemList);
         recyclerView.setAdapter(myAdapter);

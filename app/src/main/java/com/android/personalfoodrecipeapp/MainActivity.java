@@ -4,7 +4,9 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.recyclerview.widget.GridLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
+import android.content.Intent;
 import android.os.Bundle;
+import android.view.View;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -27,9 +29,11 @@ public class MainActivity extends AppCompatActivity {
 
         myItemList = new ArrayList<>();
 
-
-
         Adapter myAdapter = new Adapter(MainActivity.this, myItemList);
         recyclerView.setAdapter(myAdapter);
+    }
+
+    public void btnUploadActivity(View view) {
+        startActivity(new Intent(this, UploadDishActivity.class));
     }
 }

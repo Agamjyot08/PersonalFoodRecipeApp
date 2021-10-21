@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "966164137511",
+    "project_id": "personal-food-recipe-app",
+    "storage_bucket": "personal-food-recipe-app.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:966164137511:android:ee885fd9d65e8e67e9b002",
+        "android_client_info": {
+          "package_name": "com.android.personalfoodrecipeapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "966164137511-s07as0hlu0ppsjqdalai5b6k0rl890n9.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCH5GCax4cRh_Xr-XjMtYSve5NgA7jwNOI"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "966164137511-s07as0hlu0ppsjqdalai5b6k0rl890n9.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

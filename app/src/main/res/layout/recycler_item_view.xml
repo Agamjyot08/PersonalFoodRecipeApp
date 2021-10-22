@@ -27,15 +27,15 @@
                 android:layout_marginBottom="20dp"
                 app:srcCompat="@drawable/ic_launcher_background" />
 
-        <TextView
-            android:id="@+id/title"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Dish Name"
-            android:layout_marginTop="30dp"
-            android:layout_toRightOf="@id/itemImage"
-            android:textColor="@color/black"
-            android:textSize="30sp" />
+            <TextView
+                android:id="@+id/title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp"
+                android:layout_toRightOf="@id/itemImage"
+                android:text="Dish Name"
+                android:textColor="@color/black"
+                android:textSize="30sp" />
 
         </RelativeLayout>
 

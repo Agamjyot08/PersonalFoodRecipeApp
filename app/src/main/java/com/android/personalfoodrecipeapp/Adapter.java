@@ -34,7 +34,7 @@ public class Adapter extends RecyclerView.Adapter<ItemViewHolder> {
     @Override
     public void onBindViewHolder(@NonNull ItemViewHolder itemViewHolder, int i) {
 
-        itemViewHolder.itemImage.setImageResource(myItemList.get(i).getItemImage());
+//        itemViewHolder.itemImage.setImageResource(myItemList.get(i).getItemImage());
         itemViewHolder.title.setText(myItemList.get(i).getItemName());
 
 

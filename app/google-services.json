@@ -1,33 +1,34 @@
 {
   "project_info": {
-    "project_number": "966164137511",
-    "project_id": "personal-food-recipe-app",
-    "storage_bucket": "personal-food-recipe-app.appspot.com"
+    "project_number": "1061682800364",
+    "firebase_url": "https://personal-food-recipe-app-4b7e1-default-rtdb.firebaseio.com",
+    "project_id": "personal-food-recipe-app-4b7e1",
+    "storage_bucket": "personal-food-recipe-app-4b7e1.appspot.com"
   },
   "client": [
     {
       "client_info": {
-        "mobilesdk_app_id": "1:966164137511:android:ee885fd9d65e8e67e9b002",
+        "mobilesdk_app_id": "1:1061682800364:android:c6b39f9ee8a6cf9132a7c9",
         "android_client_info": {
           "package_name": "com.android.personalfoodrecipeapp"
         }
       },
       "oauth_client": [
         {
-          "client_id": "966164137511-s07as0hlu0ppsjqdalai5b6k0rl890n9.apps.googleusercontent.com",
+          "client_id": "1061682800364-pp4baqu885bk3emh0pg97atq9vqsu57q.apps.googleusercontent.com",
           "client_type": 3
         }
       ],
       "api_key": [
         {
-          "current_key": "AIzaSyCH5GCax4cRh_Xr-XjMtYSve5NgA7jwNOI"
+          "current_key": "AIzaSyBPtjZcIxQwSN4tQh7ZsjaEBlwW6cwE8U8"
         }
       ],
       "services": {
         "appinvite_service": {
           "other_platform_oauth_client": [
             {
-              "client_id": "966164137511-s07as0hlu0ppsjqdalai5b6k0rl890n9.apps.googleusercontent.com",
+              "client_id": "1061682800364-pp4baqu885bk3emh0pg97atq9vqsu57q.apps.googleusercontent.com",
               "client_type": 3
             }
           ]

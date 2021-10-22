@@ -15,7 +15,7 @@
             <ImageView
                 android:id="@+id/imageView"
                 android:layout_width="match_parent"
-                android:layout_height="150dp"
+                android:layout_height="200dp"
                 android:scaleType="centerCrop"
                 android:src="@drawable/ic_launcher_background" />
 
@@ -38,7 +38,7 @@
                 android:textSize="19sp" />
 
             <EditText
-                android:id="@+id/text_ing"
+                android:id="@+id/txt_ing"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="15dp"
@@ -46,7 +46,7 @@
                 android:textSize="19sp" />
 
             <EditText
-                android:id="@+id/text_pro"
+                android:id="@+id/txt_pro"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="15dp"
